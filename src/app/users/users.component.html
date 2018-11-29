@@ -1,0 +1,21 @@
+<div class="container">	
+  <h2><strong>Users</strong></h2>
+
+  <ul class="list-group" *ngIf="users">
+    <li class="list-group-item" *ngFor="let user of users.data">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="media">
+              <div class="media-left">
+                  <img class="rounded" [src]="user.avatar">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">{{ user.first_name }} {{ user.last_name }}</h4>
+                {{ user.first_name }} {{ user.last_name }}
+              </div>
+            </div>
+        </div>
+    </div>
+    </li>
+  </ul>
+</div>
